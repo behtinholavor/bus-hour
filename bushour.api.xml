@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>bushour.api</name>
+    </assembly>
+    <members>
+        <member name="F:bushour.api.BusHourController._service">
+            <summary>
+            Injectable service
+            </summary>
+        </member>
+        <member name="M:bushour.api.BusHourController.#ctor(bushour.api.IBusHourService)">
+            <summary>
+            Default constructor to initiate bus hour api 
+            </summary>
+            <param name="service">Injectable service</param>        
+        </member>
+        <member name="M:bushour.api.BusHourController.GetId(System.String)">
+            <summary>
+            Bus line by id
+            </summary>
+            <remarks>
+            Endpoint responsible for returning one or a list of buses lines by identification number
+            </remarks>
+            <param name="id">Id from line of bus</param>
+            <returns>A json object</returns>
+        </member>
+        <member name="M:bushour.api.BusHourController.GetName(System.String)">
+            <summary>
+            Bus line by name
+            </summary>
+            <remarks>
+            Endpoint responsible for returning one or a list of buses lines by name of line
+            </remarks>
+            <param name="name">Name from line of bus</param>
+            <returns>A json object</returns>
+        </member>
+        <member name="M:bushour.api.BusHourController.GetLine(System.String)">
+            <summary>
+            Bus line hour by id
+            </summary>
+            <remarks>
+            Endpoint responsible for returning one or a list of buses lines hours by identification number
+            </remarks>
+            <param name="line">Id from line of bus</param>
+            <returns>A json object</returns>
+        </member>
+    </members>
+</doc>
