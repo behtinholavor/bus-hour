@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace bushour.api
 {
@@ -53,9 +52,9 @@ namespace bushour.api
             return data;
         }
 
-        public async Task<IEnumerable<HorarioVM>> GetHours(string line)
+        public async Task<IEnumerable<HorarioVM>> GetHours(string id)
         {
-            HttpResponseMessage response = await http.GetAsync(_urlHour + line);
+            HttpResponseMessage response = await http.GetAsync(_urlHour + id);
             IEnumerable<HorarioVM> data = null;
             if (response.IsSuccessStatusCode)
             {

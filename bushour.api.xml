@@ -22,7 +22,7 @@
             <remarks>
             Endpoint responsible for returning one or a list of buses lines by identification number
             </remarks>
-            <param name="id">Id from line of bus</param>
+            <param name="id">Identification number from line of bus</param>
             <returns>A json object</returns>
         </member>
         <member name="M:bushour.api.BusHourController.GetName(System.String)">
@@ -32,7 +32,7 @@
             <remarks>
             Endpoint responsible for returning one or a list of buses lines by name of line
             </remarks>
-            <param name="name">Name from line of bus</param>
+            <param name="name">Name description from line of bus</param>
             <returns>A json object</returns>
         </member>
         <member name="M:bushour.api.BusHourController.GetLine(System.String)">
@@ -42,7 +42,7 @@
             <remarks>
             Endpoint responsible for returning one or a list of buses lines hours by identification number
             </remarks>
-            <param name="line">Id from line of bus</param>
+            <param name="line">Identification number from line of bus</param>
             <returns>A json object</returns>
         </member>
     </members>

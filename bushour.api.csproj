@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\_projects\personal\net\bus-hour\bushour.api.xml</DocumentationFile>
+    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bushour.api.xml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Factory\" />

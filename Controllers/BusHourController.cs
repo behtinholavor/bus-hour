@@ -67,13 +67,13 @@ namespace bushour.api
         /// </remarks>
         /// <param name="line">Identification number from line of bus</param>
         /// <returns>A json object</returns>
-        [HttpGet("line/{line}")]
-        public async Task<ActionResult<IEnumerable<string>>> GetLine(string line)
+        [HttpGet("line/{id}")]
+        public async Task<ActionResult<IEnumerable<string>>> GetLine(string id)
         {
-            if (string.IsNullOrEmpty(line))
+            if (string.IsNullOrEmpty(id))
                 return NotFound();
 
-            IEnumerable<HorarioVM> hours = await _service.GetHours(line);
+            IEnumerable<HorarioVM> hours = await _service.GetHours(id);
             if (hours != null && hours.Any())
                 return Ok(hours);            
             else

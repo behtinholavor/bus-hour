@@ -9,7 +9,7 @@ namespace bushour.api
 
         Task<IEnumerable<LinhaVM>> GetBusName(string name);
 
-        Task<IEnumerable<HorarioVM>> GetHours(string line);
+        Task<IEnumerable<HorarioVM>> GetHours(string id);
 
     }
 }
